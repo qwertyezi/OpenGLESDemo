@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yezi.openglmedia.view.VideoGLSurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onFilterChangeClick"
+            android:text="切换滤镜"/>
+
+        <Button
+            android:id="@+id/btn_scale_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onScaleTypeChangeClick"
+            android:text="显示模式"/>
+
+        <Button
+            android:id="@+id/btn_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onVolumeClick"
+            android:text="声音"/>
+
+    </LinearLayout>
+
+</LinearLayout>
